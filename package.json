@@ -4,7 +4,8 @@
   "description": "Block 37A: Unit 4 Career Simulation",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon src/server/main.js -w src/server"
+    "dev": "nodemon src/server/main.js -w src/server",
+    "seed": "node src/server/seed.js"
   },
   "author": "David Martin",
   "license": "ISC",
@@ -15,6 +16,7 @@
     "dotenv": "^16.3.1",
     "express": "^4.18.2",
     "jsonwebtoken": "^9.0.1",
+    "path": "^0.12.7",
     "pg": "^8.11.2",
     "prisma": "^5.12.1",
     "router": "^1.3.8"
