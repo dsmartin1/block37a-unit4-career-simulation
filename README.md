@@ -35,3 +35,24 @@ AS AN ENGINEER, I SHOULD:
     - For example, seed hundreds of items and reviews with dummy data so that when you get to the “pagination” user story, you won’t have to worry about adding more.
     - Also, add a bunch of users with reviews so the review editing features can be worked on without already having the “write a review” functionality built.
 - Have secured user data so that no one can unrightfully manipulate information.
+
+Required routes:
+
+POST /api/auth/register
+POST /api/auth/login
+GET /api/auth/me 🔒
+
+GET /api/items
+GET /api/items/:itemId
+GET /api/items/:itemId/reviews
+
+GET /api/items/:itemId/reviews/:reviewId
+POST /api/items/:itemId/reviews 🔒
+GET /api/reviews/me 🔒
+PUT /api/users/:userId/reviews/:reviewId 🔒
+
+POST /api/items/:itemId/reviews/:reviewId/comments 🔒
+GET /api/comments/me 🔒
+PUT /api/users/:userId/comments/:commentId 🔒
+DELETE /api/users/:userId/comments/:commentId 🔒
+DELETE /api/users/:userId/reviews/:reviewId 🔒
